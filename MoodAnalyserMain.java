@@ -1,5 +1,7 @@
 package moodanalyser;
 
+import moodanalyser.MoodAnalysisException.MoodType;
+
 public class MoodAnalyserMain {
 	
 	String msg;
@@ -20,7 +22,7 @@ public class MoodAnalyserMain {
 			return "HAPPY";
 		}
 		catch(NullPointerException e) {
-			throw new MoodAnalysisException("The message is Empty");
+			throw new MoodAnalysisException(MoodType.NULL, "It's an Empty Mood");
 		}
 	}
 

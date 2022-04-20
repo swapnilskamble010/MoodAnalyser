@@ -24,10 +24,10 @@ class MoodAnalysisTest {
 		MoodAnalyserMain moodanalyser = new MoodAnalyserMain(null);
 		try {
 			String mood = moodanalyser.analyseMood();
-			Assertions.assertEquals("HAPPY", mood);
+			Assertions.assertEquals("EMPTY", mood);
 		}
 		catch(MoodAnalysisException e) {
-			e.printStackTrace();
+			System.out.println(e);
 		}
 	}
 }
