@@ -2,7 +2,17 @@ package moodanalyser;
 
 public class MoodAnalyserMain {
 	
-	String analyseMood(String msg) {
+	String msg;
+	
+	public MoodAnalyserMain() {
+		
+	}
+	
+	public MoodAnalyserMain(String msg) {
+		this.msg = msg;
+	}
+	
+	String analyseMood() {
 		if(msg.contains("Sad")) {
 			return "SAD";
 		}
